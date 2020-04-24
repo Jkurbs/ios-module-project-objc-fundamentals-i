@@ -11,9 +11,18 @@
 @implementation LSIAgent
 
 
+- (instancetype)initWithCoverName:(NSString *)coverName realName:(NSString *)realName accessLevel:(NSInteger)accessLevel compromised:(Boolean)compromised {
+    
+   self = [super init];
+    if (self) {
+        _coverName = coverName;
+        _realName = realName;
+        _accessLevel = &accessLevel;
+    }
+    
+    return self; 
 
-
-
+}
 
 
 @end
